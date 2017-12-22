@@ -1,7 +1,5 @@
-/build/
-/config/
 /dist/
-/*.js
+!.eslintrc.js
 {{#unit}}
 /test/unit/coverage/
 {{/unit}}
