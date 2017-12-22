@@ -6,7 +6,6 @@ const path = require('path')
 
 module.exports = {
   dev: {
-
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
@@ -29,10 +28,6 @@ module.exports = {
     showEslintErrorsInOverlay: false,
     {{/lint}}
 
-    /**
-     * Source Maps
-     */
-
     // https://webpack.js.org/configuration/devtool/#development
     devtool: 'eval-source-map',
 
@@ -46,7 +41,7 @@ module.exports = {
     // (https://github.com/webpack/css-loader#sourcemaps)
     // In our experience, they generally work as expected,
     // just be aware of this issue when enabling this option.
-    cssSourceMap: false,
+    cssSourceMap: false
   },
 
   build: {
@@ -57,11 +52,6 @@ module.exports = {
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-
-    /**
-     * Source Maps
-     */
-
     productionSourceMap: true,
     // https://webpack.js.org/configuration/devtool/#production
     devtool: '#source-map',
