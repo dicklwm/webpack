@@ -57,6 +57,7 @@ module.exports = {
       optionalDependencies: ['test/unit/index.js']
     }],
     {{/if_eq}}
+    'space-before-function-paren': 'off',
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   }
