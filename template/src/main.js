@@ -3,14 +3,14 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 {{/if_eq}}
 import Vue from 'vue'
-import App from './App'
+import App from './app'
 {{#router}}
 import router from './router'
 {{/router}}
 
 Vue.config.productionTip = false
 
-/* eslint-disable no-new */
+// eslint-disable-next-line no-new
 new Vue({
   el: '#app',
   {{#router}}
